@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner teclado = new Scanner(System.in);
+		
+	System.out.print("Informe a quantidade de latas de 350ml: ");
+	int QLatas = teclado.nextInt();
+	System.out.print("Informe a quantidade de garrafas de 600ml: ");
+	int QGarrafas = teclado.nextInt();
+	System.out.print("Informe a quantidade de garrafas de 2ls: ");
+	int QLitros = teclado.nextInt() * 2;
+	
+	float QLatasLitros = ((QLatas * 350)/1000f);
+	float QGarrafasLitros = ((QGarrafasLitros * 600) / 1000f);
+	
+	int TotalLitros = (int) (QLatasLitros + QGarrafasLitros + QLitros);
+	System.out.println("Quantidade total em litros: " + TotalLitros);
+	
+
+	}
+}
