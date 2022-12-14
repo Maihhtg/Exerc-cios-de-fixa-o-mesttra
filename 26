@@ -1,0 +1,48 @@
+import java.util.Scanner;
+import java.util.InputMismatchException;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner teclado = new Scanner(System.in);
+	   
+	    int nota100, nota50, nota20, nota10, nota5;
+	    int valorR;
+	    
+	    try{
+	    System.out.println("Digite o valor que deseja sacar: ");
+	    int valorS = teclado.nextInt();
+	    
+	    if (valorS <= 0 ){
+	        System.out.println("Valor deve ser maior que 0.");
+	        
+	    }else{
+	    System.out.println("Notas disponíveis: ");
+	    valorR = valorS/100;
+	    System.out.println("100: " + valorR );
+	    valorS = valorS%100;
+	 
+	    valorR = valorS/50;
+	    System.out.println("50: " + valorR);
+	    valorS = valorS%50;
+	    
+	    valorR = valorS/20;
+	    System.out.println("20: " + valorR);
+	    valorS = valorS%20;
+	    
+	    valorR = valorS/10;
+	    System.out.println("10: " + valorR);
+	    valorS = valorS%10;
+	    
+	    valorR = valorS/5;
+	    System.out.println("5: " + valorR);
+	    valorS = valorS%5;
+	        
+	    }
+    }
+    catch(InputMismatchException erro){
+        System.out.print("Por favor, digite um valor inteiro.");
+    }
+	    
+		
+	}
+}
