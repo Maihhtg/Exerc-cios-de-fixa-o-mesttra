@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Main
+{
+    public static void main (String[] args) {
+	    Scanner teclado = new Scanner(System.in);
+	    
+	    System.out.print("Informe o primeiro numero: ");
+	    int numero1 = teclado.nextInt();
+	    
+	    System.out.print("Informe o segundo numero: ");
+	    int numero2 = teclado.nextInt();
+	    
+	    float div = numero1/ (float) numero2;
+	    
+	    System.out.printf(numero1 + " / " + numero2 + " = " + "%.2f" , div);
+	    
+	    }
+	
+}
