@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Main
+{
+    public static void main (String[] args) {
+	    Scanner teclado = new Scanner(System.in);
+	    float Frente, Lateral;
+	    float Valor;
+	    float Area;
+	    
+	   System.out.print("Quantos metros quadrados o terreno possui de frente:\n"); Frente = teclado.nextFloat();
+	   System.out.print("Quantos metros o terreno possui de Lateral:\n"); Lateral = teclado.nextFloat();
+	   System.out.print("Informe o valor do metro quadrado:\n"); Valor = teclado.nextFloat(); 
+	   System.out.println("A Area é igual a: "+ Frente *Lateral); Area = teclado.nextFloat();
+	   
+	   System.out.printf("Area:%.2f" , Valor * Area);
+	}
+}
