@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner teclado = new Scanner(System.in);
+	    
+	    int funcionario1 = teclado.nextInt();
+	    int horasT = teclado.nextInt();
+	    float valorH = teclado.nextFloat();
+	    
+	    float salario = (horasT * valorH);
+	    
+		System.out.println("NUMBER = " + funcionario1);
+		System.out.printf("SALARY = U$ %.2f\n" , salario);
+		
+		teclado.close();
+	}
+}
