@@ -1,0 +1,18 @@
+import java.util.Scanner;
+import java.lang.Math;
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner teclado = new Scanner(System.in);
+
+        System.out.print("Informe o  valor da conta: ");
+        float ContaValor = teclado.nextFloat();
+        int valorCarlos_Andre = (int) (ContaValor / 3);
+        float ValorFelipe = ContaValor - (valorCarlos_Andre * 2);
+        
+        System.out.printf("Carlos e André pagarão: %d" , valorCarlos_Andre);
+        System.out.printf("\nFelipe pagará: %.2f" , ValorFelipe);
+        
+    }
+}
