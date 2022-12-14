@@ -1,0 +1,54 @@
+import java.util.Scanner;
+public class Main
+{
+    public static void main (String[] args) {
+	    Scanner teclado = new Scanner(System.in);
+	    
+	    //letra a 
+	   System.out.print("Informe o valor da base menor: ");
+	    float BaseMenor = teclado.nextFloat();
+	    
+	   System.out.print("Informe o valor da base maior: ");
+	    float BaseMaior = teclado.nextFloat();
+	    
+	   System.out.print("Informe o valor da altura: ");
+	    float altura = teclado.nextFloat();
+	    
+	   float areaTrapezio = ((BaseMaior + BaseMenor) * altura) / 2;
+	    
+	    System.out.println("Area do trapézio:" + areaTrapezio);
+	   
+	   //Letra B
+	    System.out.print("Informe o valor do lado: ");
+	    float Lado = teclado.nextFloat();
+	    float areaQuadrado = Lado * Lado;
+	    
+	    System.out.print("A area do quadrado é igual a: " + areaQuadrado);
+	    
+	   //Letra c
+	   System.out.print("Informe o valor da largura: ");
+	   float largura = teclado.nextFloat();
+	   System.out.print("Informe o valor da altura: ");
+	   float alturaRetangulo = teclado.nextFloat();
+	   float areaRetangulo = largura * alturaRetangulo;
+	   
+	   System.out.print("A area do retangulo é igual a: " + areaRetangulo);
+	    
+	   //Letra d 
+	   System.out.print("Informe o valor do raio: ");
+	   float raio = teclado.nextFloat();
+	   float pi = 3.14f;
+	   float areaCirculo = pi * (raio * raio);
+	   System.out.print("A area do circulo é: " + areaCirculo);
+	    
+	    //Letra e 
+	     System.out.print("Informe o valor da base: ");
+	     float baseT =  teclado.nextFloat();
+	     System.out.print("Informe o valor da altura: ");
+	     float alturaT =  teclado.nextFloat();
+	     float areaTriangulo = baseT * alturaT / 2;
+	     System.out.print("A area do triangulo é: " + areaTriangulo);
+	     
+	    }
+	
+}
