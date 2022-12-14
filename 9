@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class Main
+{
+    public static void main (String[] args) {
+	    Scanner teclado = new Scanner(System.in);
+	    
+	    //letra a 
+	   System.out.print("Informe o ano que voce nasceu: ");
+	    int anoNascimento = teclado.nextInt();
+	    
+	  System.out.print("Informe o ano atual: ");
+	    int anoAtual = teclado.nextInt();
+	    
+	    //a 
+	    int idadeAnos = anoAtual - anoNascimento;
+	    
+	    //b 
+	    int idademeses = idadeAnos * 12;
+	    
+	    //c 
+	    int idadeDias = idademeses * 30;
+	    
+	    //d 
+	    int idadeSemanas = idadeDias / 7;
+	    
+	    System.out.println("Idade em anos: " + idadeAnos);
+	    System.out.println("idademeses: " + idademeses);
+	    System.out.println("Idade em dias: " + idadeDias);
+	    System.out.println("Idade atual: " + anoAtual);
+	    }
+	
+}
