@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.print("Informe a quantidade de sanduiches: ");
+        int qtdDeSanduiches = entrada.nextInt();
+
+        float qtdDeQueijoKg = (qtdDeSanduiches * 2 * 50) / 1000f;
+        float qtdDePresuntoKg = (qtdDeSanduiches * 50) / 1000f;
+        float qtdDeCarneKg = (qtdDeSanduiches * 120) / 1000f;
+
+        System.out.println("Para produzir " + qtdDeSanduiches + " será necessário: ");
+        System.out.println("Quantide de Mussarela: " + qtdDeQueijoKg);
+        System.out.printf("Quantide de Presunto: %.2f\n" , qtdDePresuntoKg);
+        System.out.printf("Quantide de Carne: %.2f" , qtdDeCarneKg);
+    }
+}
