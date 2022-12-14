@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner teclado = new Scanner(System.in);
+
+        System.out.print("Digite o faturamento anterior: ");
+        float fatuAnt = teclado.nextFloat();
+        float meta = fatuAnt + ((fatuAnt / 100) * 20);
+        float diferença = meta - fatuAnt;
+        float Prod1 = diferença / 150f;
+        float Prod2 = diferença / 220f;
+        float Prod3 = diferença / 97f;
+        
+        System.out.printf("Aumentou: %.2f", diferença);
+        System.out.printf("Produto 1: %.2f" , Prod1);
+        System.out.printf("Produto 2: %.2f" , Prod2);
+        System.out.printf("Produto 3: %.2f" , Prod3);
+        
+     
+    }
+}
