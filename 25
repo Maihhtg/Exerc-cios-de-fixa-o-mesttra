@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner teclado = new Scanner(System.in);
+	    
+	    int codigo1  = teclado.nextInt();
+	    int numerop1 = teclado.nextInt();
+	    double valorp1 = teclado.nextDouble();
+	    int codigo2  = teclado.nextInt();
+	    int numerop2 = teclado.nextInt();
+	    double valorp2 = teclado.nextDouble();
+	    
+	    double valorfinal1 = numerop1 * valorp1;
+	    double valorfinal2 = numerop2 * valorp2;
+	    double total = valorfinal1 + valorfinal2;
+	    
+		System.out.printf("VALOR A PAGAR: R$ %.2f\n" , total);
+		
+		teclado.close();
+	}
+}
