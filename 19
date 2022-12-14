@@ -1,0 +1,32 @@
+import java.util.Scanner;
+import java.lang.Math;
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner teclado = new Scanner(System.in);
+
+        System.out.print("Insira a quantidade de pães: ");
+        float TotalP = teclado.nextFloat() * 0.12f;
+        
+        System.out.print("Insira a  quantidade de broas: ");
+        float TotalBroas = teclado.nextFloat() * 1.60f;
+        
+        System.out.print("Valor da reforma:");
+        float Reforma = teclado.nextFloat();
+        
+        float Total = TotalP + TotalBroas;
+        float poupança = (Total / 100) * 10;
+        
+        int diasNec = (int) Math.ceil (Reforma / poupança);
+        
+        System.out.printf("Broa: %.2f\n" , TotalBroas);
+        System.out.printf("Pães: %.2f\n" , TotalP);
+        System.out.printf("Faturamento diário: %.2f\n" , Total);
+        System.out.printf("Poupança: %.2f\n" , poupança);
+        System.out.printf("Dias de reforma: %d\n" , diasNec );
+        
+        
+       
+    }
+}
