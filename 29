@@ -1,0 +1,111 @@
+import java.util.Scanner;
+import java.util.InputMismatchException;
+
+public class Main
+{
+    public static void exibirMenu(){
+        System.out.print("============* MENU DE VOTAÇÃO *============\n\n");
+        System.out.println("1 - Candidato A");
+        System.out.println("2 - Candidato B");
+        System.out.println("3 - Candidato C");
+        System.out.println("4 - Nulo\n");
+    }
+    
+    public static int lerVoto(String voto){
+        Scanner teclado = new Scanner(System.in);
+        
+        System.out.println("Digite o número do " + voto + " candidato: ");
+        
+            
+        return teclado.nextInt();
+    
+        try {
+            
+    public static void main(String[] args) {
+                
+
+        int vote, c1, c2, c3, total = 0;
+
+        c1 = c2 = c3 = 0;
+        
+        
+        exibirMenu();
+                
+        vote = lerVoto("Primeiro");
+        
+        if (vote == 1) 
+            c1 += 1;
+        else if (vote == 2)
+            c2 += 1;
+        else if (vote == 3)
+            c3 += 1;
+
+        vote = lerVoto("Segundo");
+
+        if (vote == 1)
+            c1 += 1;
+        else if (vote == 2)
+            c2 += 1;
+        else if (vote == 3)
+            c3 += 1;
+
+
+        vote = lerVoto("Terceiro");
+    
+        if (vote == 1)
+            c1 += 1;
+        else if (vote == 2)
+            c2 += 1;
+        else if (vote == 3)
+            c3 += 1;
+
+        vote = lerVoto("Quarto");
+        
+        if (vote == 1)
+            c1 += 1;
+        else if (vote == 2)
+            c2 += 1;
+        else if (vote == 3)
+            c3 += 1;
+
+        vote = lerVoto("Quinto");
+        
+        if (vote == 1)
+            c1 += 1;
+        else if (vote == 2)
+            c2 += 1;
+        else if (vote == 3)
+            c3 += 1;
+               
+        } catch(InputMismatchException erro letra ){
+            System.out.println("Candidato nulo, o voto não será computado.");
+        } 
+
+        float pctg = ((c1 + c2 + c3) * 100)/5;
+        float pctgC1 = (c1 * 100)/5;
+        float pctgC2 = (c2 * 100)/5;
+        float pctgC3 = (c3 * 100)/5;
+
+        System.out.print("\nPercentual de votos válidos: " + pctg + "%");
+        System.out.print("\nPercentual de votos candidato A: " + pctgC1 + "%");
+        System.out.print("\nPercentual de votos candidato B: " + pctgC2 + "%");
+        System.out.println("\nPercentual de votos candidato C: " + pctgC3 + "%");
+      
+        if (pctgC1C1 > pctgC2){
+            System.out.print("\nCandidato vencedor: Candidato A");
+        } else if (pctgC1 > pctgC3){
+            System.out.print("\nCandidato vencedor: Candidato A");
+        } else if (pctgC2 > pctgC1){
+            System.out.print("\nCandidato vencedor: Candidato B");
+        } else if (pctgC2 > pctgC3){
+            System.out.print("\nCandidato vencedor: Candidato B");
+        } else if (pctgC3 > pctgC1){
+            System.out.print("\nCandidato vencedor: Candidato C");
+        } else if (pctgC3 > pctgC2){
+            System.out.print("\nCandidato vencedor: Candidato C");
+        }
+        
+        
+        }
+}
+}
