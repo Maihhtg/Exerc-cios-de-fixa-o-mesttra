@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner teclado = new Scanner(System.in);
+
+        System.out.print("Digite as quantidades de horas normais: ");
+        int horasnormais = teclado.nextInt();
+        
+        System.out.print("Digite as quantidades de horas extras: ");
+        int horasExtras = teclado.nextInt();
+        
+        System.out.print("Digite a quantidades de dependentes menores de 6 anos: ");
+        int Qdependentes = teclado.nextInt();
+        
+        float totalHN = horasnormais * 10;
+        float totalHE = horasExtras * 15;
+        float totalDependentes = Qdependentes * 90;
+        float salárioLiquido = totalHN - ((totalHN / 100) * 11);
+        float salárioFinal = salárioLiquido + totalDependentes + totalHE;
+        
+        System.out.println("\nHoras Normais: " + totalHN);
+        System.out.println("\nHoras extras: " + totalHE);
+        System.out.println("\nAdicional dependentes: " + totalDependentes);
+        System.out.println("\nSalário liquido: " + salárioLiquido);
+        System.out.println("\nSalário final: " + salárioFinal);
+        
+        
+        
+        
+        
+        
+        
+        
+    }
+}
