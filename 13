@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner teclado = new Scanner(System.in);
+		
+		
+	System.out.print("Informe a quantidade de frangos: ");
+	int Qdf = teclado.nextInt();
+	
+	float PéDireito = Qdf * 4;
+	float PéEsquerdo = (Qdf * 2) * 3.50f;
+	
+	float valorTotal = PéEsquerdo + PéDireito;
+	
+	System.out.println("O valor totatl será: " + valorTotal);
+	
+	}
+}
