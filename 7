@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Main
+{
+    public static void main (String[] args) {
+	    Scanner teclado = new Scanner(System.in);
+	    
+	    System.out.print("Informe seu peso (Kg):");
+	    float PesoUsuario = teclado.nextFloat();
+	    
+	    //Letra a 
+	    
+	    float calculo1 = PesoUsuario + (PesoUsuario * (15/100f));
+	    System.out.println("Se o usuario engordar 15%. ele ficará com:" + calculo1 + "(Kg)");
+	    
+	   
+	   //Letra b
+	   
+	   float calculo2 = PesoUsuario - (PesoUsuario * (20/100f));
+	   System.out.println("Se o usuario emagrecer 20%, ele ficará com:" + calculo2 + "(kg)");
+	    
+	    }
+	
+}
