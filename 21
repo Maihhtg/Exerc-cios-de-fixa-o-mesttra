@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner teclado = new Scanner(System.in);
+	
+	int litrosSuco;
+	
+	System.out.print("Digite a quantidade de litros de suco: ");
+	litrosSuco = teclado.nextInt();
+	
+	System.out.println("\nPara fabricar " + litrosSuco + "litros de suco, será necessário: ");
+    System.out.print("Litros de aguá: ");
+    System.out.printf("%.2f" , litrosSuco * 0.80);
+    System.out.printf("\nLitros de essencia: %.2f" , (litrosSuco * 0.20));
+
+
+	}
+}
